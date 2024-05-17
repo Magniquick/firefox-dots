@@ -1,0 +1,32 @@
+@import url(./extensions.css);
+@import url(./tabbar.css);
+
+
+/* De-emphasize tab icons and names when window is unfocused */
+:root:-moz-window-inactive .tab-content {
+  opacity: 0.6;
+}
+
+#navigator-toolbox { border-bottom: 0px !important; }
+
+#identity-icon-box{
+	display: none !important;
+}
+
+#identity-permission-box {
+    background: none !important;
+}
+
+.tabbrowser-tab .tab-close-button {
+  display: none;
+}
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  display: flex !important;
+  align-items: center;
+}
+
+/*  Removes flash before loading pages  */
+:root{--tabpanel-background-color: var(--toolbar-field-background-color) !important}
+tabbrowser tabpanels { background-color: rgb(24 24 37) !important; }
+browser { background-color: #181825 !important; }
