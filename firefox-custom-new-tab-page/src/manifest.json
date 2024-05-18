@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Custom New Tab Page",
+  "version": "1.0.0",
+  "description": "Specify a custom URL to be shown when opening a new tab, without changing the address bar content",
+  "developer": {
+    "name": "MethodGrab",
+    "url": "https://github.com/methodgrab/firefox-custom-new-tab-page"
+  },
+  "icons": {
+    "48": "img/icon-48.png",
+    "96": "img/icon-96.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "custom-new-tab-page@mint.as",
+      "strict_min_version": "57.0"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "permissions": [
+    "storage"
+  ],
+  "optional_permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "app.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}

@@ -6,7 +6,7 @@
   --positionX2: absolute; /* 'absolute' for left, 'none' for right sidebar */
 }
 
-/*  DIsable default tab bar */
+/*  Disable default tab bar */
 #TabsToolbar {
   display: none;
 }

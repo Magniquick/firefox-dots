@@ -26,7 +26,3 @@
   align-items: center;
 }
 
-/*  Removes flash before loading pages  */
-:root{--tabpanel-background-color: var(--toolbar-field-background-color) !important}
-tabbrowser tabpanels { background-color: rgb(24 24 37) !important; }
-browser { background-color: #181825 !important; }
