@@ -1,0 +1,14 @@
+/* 
+The idea is that firefox requires time to load.. whereever the colours come from
+so we provide a quick fallback for it to use - throughout the main pages that it loads from on start
+do not use important as we dont want to override anything.
+Tested on Firefox dev 127.0b5 and Firefox 126.0
+*/
+
+@-moz-document url(http://localhost:3000/),
+                url(about:blank),
+                url(moz-extension://1ecc8043-74c6-480d-bf2c-eb274dfd6826/app.html) {
+  html > body {
+    background-color: rgb(24, 24, 37);
+  }
+}
